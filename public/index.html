@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wake Me Up!</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💤</text></svg>"
+    />
+  </head>
+  <body class="min-h-screen bg-gradient-to-b from-indigo-400 to-indigo-500">
+    <header
+      class="bg-indigo-950 bg-opacity-80 text-indigo-50 top-0 z-10 text-4xl fixed w-screen xsm:text-2xl"
+    >
+      <section class="mx-auto px-4 py-2 flex justify-between items-center">
+        <span>💤</span>
+        <h1 class="font-bold tracking-widest">- Wake Me Up -</h1>
+        <span>💤</span>
+      </section>
+    </header>
+    <main
+      class="grid grid-cols-2 w-10/12 h-[calc(100vh-1rem)] mx-auto justify-items-center items-center md:grid-cols-1 md:gap-4 lg:w-11/12 md:content-center md:w-8/12 sm:w-full sm:gap-16 xsm:gap-8 xsm:mt-8"
+    >
+      <section
+        class="w-full gap-6 grid justify-items-center items-center content-evenly p-0 md:gap-3 sm:gap-6"
+      >
+        <div
+          class="rounded-md bg-indigo-500 grid text-9xl md:text-6xl justify-center justify-items-start text-indigo-100 px-12 md:w-3/6 sm:w-4/6 sm:h-28"
+        >
+          <div class="time flex justify-between w-full gap-6 md:gap-2 sm:pr-4">
+            <span class="hour inline-flex w-32 md:w-24">
+              <span
+                id="hour-second-digit"
+                class="z-20 min-w-max w-6/12 flex justify-end relative before:absolute before:content-['8'] before:opacity-10"
+              >
+                2
+              </span>
+              <span
+                id="hour-first-digit"
+                class="min-w-max w-6/12 flex justify-end before:absolute before:content-['8'] before:opacity-10"
+              >
+                3
+              </span>
+            </span>
+            <span class="relative md:left-4 sm:left-2">:</span>
+            <span class="minute inline-flex w-32 md:w-24">
+              <span
+                id="minute-second-digit"
+                class="min-w-max w-6/12 flex justify-end before:absolute before:content-['8'] before:opacity-10"
+              >
+                0
+              </span>
+              <span
+                id="minute-first-digit"
+                class="min-w-max w-6/12 flex justify-end before:absolute before:content-['8'] before:opacity-10"
+              >
+                0
+              </span>
+            </span>
+          </div>
+          <div
+            class="bg-indigo-950 options flex text-6xl w-full justify-between px-8 md:px-10 md:text-3xl sm:text-4xl"
+          >
+            <div class="hour-buttons bg-indigo-950">
+              <button class="time-setting-button" id="hour-increase">+</button>
+              <button class="time-setting-button" id="hour-decrease">-</button>
+            </div>
+            <div class="minute-buttons">
+              <button class="time-setting-button" id="minute-increase">
+                +
+              </button>
+              <button class="time-setting-button" id="minute-decrease">
+                -
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="btn bg-indigo-600 px-4 py-2 rounded-bl-lg rounded-tr-lg text-indigo-200 text-5xl mt-6 hover:bg-indigo-400 transition-colors md:mt-0 md:text-2xl sm:text-4xl"
+          id="set-alarm"
+        >
+          Set Alarm
+        </button>
+      </section>
+      <section
+        class="w-full grid justify-items-center items-center content-evenly p-0 text-4xl text-indigo-50 font-thin md:text-2xl sm:text-4xl"
+      >
+        <div
+          class="rounded-md bg-indigo-500 w-8/12 h-96 grid grid-cols-1 content-between justify-items-center bg-center lg:h-80 md:h-52 md:w-6/12 md:bg-cover sm:w-8/12 sm:h-72"
+          id="voice-background-div"
+        >
+          <div
+            class="bg-indigo-600 px-8 h-16 text-center pt-2 rounded-b-full md:h-8 md:pt-0 sm:h-12 sm:pt-1 w-full"
+            id="voice-name-tag"
+          >
+            Clock
+          </div>
+          <div
+            class="rounded-b-md text-center w-full h-16 bg-indigo-800 flex justify-between gap-14 md:h-8 sm:h-12"
+          >
+            <button
+              class="bg-indigo-600 h-full w-2/12 hover:bg-indigo-400 transition-colors rounded-r-sm"
+              id="prev-btn"
+            >
+              &#60;
+            </button>
+            <button
+              class="bg-indigo-600 h-full w-5/12 hover:bg-indigo-400 transition-colors rounded-sm"
+              id="play"
+            >
+              Play
+            </button>
+            <button
+              class="bg-indigo-600 h-full w-2/12 hover:bg-indigo-400 transition-colors rounded-l-sm"
+              id="next-btn"
+            >
+              &#62;
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
