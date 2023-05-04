@@ -809,19 +809,10 @@ video {
   --tw-bg-opacity: 0.8;
 }
 
-.bg-gradient-to-b {
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+.bg-body {
+  background-image: url(img/bg-image.jpg);
 }
 
-.from-indigo-400 {
-  --tw-gradient-from: #818cf8 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(129 140 248 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.to-indigo-500 {
-  --tw-gradient-to: #6366f1 var(--tw-gradient-to-position);
-}
 
 .bg-center {
   background-position: center;
