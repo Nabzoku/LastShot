@@ -45,7 +45,7 @@ function minuteChange(change) {
     minuteSecond.textContent.trim() + minuteFirst.textContent.trim()
   );
   if (change === 'sum') {
-    if (minute === 60) {
+    if (minute === 59) {
       minuteFirst.textContent = 0;
       minuteSecond.textContent = 0;
     } else {
@@ -60,8 +60,8 @@ function minuteChange(change) {
     }
   } else if (change === 'minus') {
     if (minute === 0) {
-      minuteFirst.textContent = 0;
-      minuteSecond.textContent = 6;
+      minuteFirst.textContent = 9;
+      minuteSecond.textContent = 5;
     } else if (minute > 0 && minute < 10) {
       minute--;
       minuteFirst.textContent = minute;
