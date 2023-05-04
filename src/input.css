@@ -3,7 +3,7 @@
 @tailwind utilities;
 @font-face {
   font-family: 'MyCustomFont';
-  src: url('/public/digital-7.ttf') format('truetype');
+  src: url('../digital-7.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
