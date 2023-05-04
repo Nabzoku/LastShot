@@ -999,7 +999,7 @@ video {
 @font-face {
   font-family: 'MyCustomFont';
 
-  src: url('docs/digital-7.ttf') format('truetype');
+  src: url('digital-7.ttf') format('truetype');
 
   font-weight: normal;
 
