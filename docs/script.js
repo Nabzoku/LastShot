@@ -114,7 +114,7 @@ const voiceArray = [policeSirenVoice, clockVoice, emergencyVoice];
 const voiceBackgroundArray = [
   `url(img/police-siren.jpg)`,
   `url(img/clock.jpg)`,
-  `url(../img/emergency.jpg)`,
+  `url(img/emergency.jpg)`,
 ];
 const voiceNamesArray = ['police siren', 'clock', 'emergency'];
 const playButton = document.querySelector('#play');
