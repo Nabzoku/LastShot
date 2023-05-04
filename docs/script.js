@@ -106,15 +106,15 @@ settingButtons.forEach((button) => {
   button.addEventListener('mouseup', () => clearInterval(MouseDownInterval));
 });
 /* Alarm Voice */
-const clockVoice = new Audio('voices/clock.mp3');
-const emergencyVoice = new Audio('voices/emergency.mp3');
-const policeSirenVoice = new Audio('voices/police-siren.mp3');
+const clockVoice = new Audio('https://nabzoku.github.io/Wake-Me-Up/voices/clock.mp3');
+const emergencyVoice = new Audio('https://nabzoku.github.io/Wake-Me-Up/voices/emergency.mp3');
+const policeSirenVoice = new Audio('https://nabzoku.github.io/Wake-Me-Up/voices/police-siren.mp3');
 
 const voiceArray = [policeSirenVoice, clockVoice, emergencyVoice];
 const voiceBackgroundArray = [
-  `url(img/police-siren.jpg)`,
-  `url(img/clock.jpg)`,
-  `url(img/emergency.jpg)`,
+  `url(https://nabzoku.github.io/Wake-Me-Up/img/police-siren.jpg)`,
+  `url(https://nabzoku.github.io/Wake-Me-Up/img/clock.jpg)`,
+  `url(https://nabzoku.github.io/Wake-Me-Up/img/emergency.jpg)`,
 ];
 const voiceNamesArray = ['police siren', 'clock', 'emergency'];
 const playButton = document.querySelector('#play');
