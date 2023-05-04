@@ -112,9 +112,9 @@ const policeSirenVoice = new Audio('voices/police-siren.mp3');
 
 const voiceArray = [policeSirenVoice, clockVoice, emergencyVoice];
 const voiceBackgroundArray = [
-  `url(img/police-siren.jpg)`,
-  `url(img/clock.jpg)`,
-  `url(img/emergency.jpg)`,
+  `url(../docs/img/police-siren.jpg)`,
+  `url(../docs/img/clock.jpg)`,
+  `url(../docs/img/emergency.jpg)`,
 ];
 const voiceNamesArray = ['police siren', 'clock', 'emergency'];
 const playButton = document.querySelector('#play');
@@ -204,8 +204,6 @@ setAlarmButton.addEventListener('click', () => {
 function timeUpdate() {
   currentHour = new Date().getHours();
   currentMinute = new Date().getMinutes();
-  console.log('counting');
-  console.log(alarmHour === currentHour && alarmMinute === currentMinute);
 
   if (alarmHour === currentHour && alarmMinute === currentMinute) {
     if (voice.paused) {
